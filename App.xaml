@@ -1,0 +1,17 @@
+﻿<Application x:Class="Zac_s_Minecraft_Patcher.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Zac_s_Minecraft_Patcher"
+             xmlns:viewModel="clr-namespace:Zac_s_Minecraft_Patcher.MVVM.ViewModel"
+             xmlns:view ="clr-namespace:Zac_s_Minecraft_Patcher.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <DataTemplate DataType="{x:Type viewModel:DayViewModel}">
+                <view:DayView/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
